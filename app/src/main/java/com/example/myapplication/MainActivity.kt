@@ -23,6 +23,6 @@ class MainActivity: AppCompatActivity() {
             insets
         }
 
-        lazyText.setText(R.string.lazy)
+        lazyText.setText(getString(R.string.lazy) + " Activity ${this@MainActivity.hashCode()}")
     }
 }
